@@ -164,7 +164,10 @@ Main
 Experience
 ***************/
 #experience,
-#education {
+#education,
+#skills,
+#interests,
+#awards {
     padding: 80px 0 80px 50px;
 }
 
@@ -204,19 +207,58 @@ Education
     
 }
 
+/***************
+Skills
+***************/
 
+#skills,
+#interests,
+#awards {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+#skills .icons {
+    padding: 20px 0;
+}
 
+#skills .icons i {
+    font-size: 3rem;
+    margin-left: 20px;
+}
 
+#skills ul {
+    list-style: none;
+}
 
+#skills ul li i.fas {
+    font-size: 1rem;
+}
 
+#skills h4 {
+    margin-top: 30px;
+}
 
+/***************
+Interests
+***************/
 
+#interests p {
+    margin-bottom: 20px;
+}
 
+/***************
+Awards
+***************/
+#awards ul {
+    list-style: none;
+} 
 
-
-
-
+#awards ul i {
+    color: var(--orangeDark);
+}
 
 
 
