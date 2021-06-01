@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@400;700&display=swap');
 
 :root {
     --orangeDark:#BD5D38;
     --orangeLight:rgb(191, 111, 80);
     --white:#fff;
-    --gray:#898786;
+    --gray:#585757;
     --grayLight:#d3cfcd;
     --black:#000;
     --transition: .4s ease-in-out;
@@ -25,9 +25,35 @@ body {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
+.container {
+    width: 75%;
+}
+
+hr {
+    border: 2px solid var(--grayLight);
+}
+
+.headings {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: 50px;
+}
+
+.subheadings {
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 1.7rem;
+}
+
+.subsubheadings {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+} 
 /***************
 Navigation
 ***************/
@@ -71,17 +97,6 @@ nav ul li a:hover {
     transition: var(--transition);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /***************
 Main
 ***************/
@@ -90,6 +105,113 @@ Main
     height: 100vh;
     overflow: scroll;
 }
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-left: 50px;
+}
+
+#header h1 {
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 5rem;
+}
+
+#header h1 span {
+    color: var(--orangeDark);
+}
+
+#header h4 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+#header h4 a {
+    color: var(--orangeLight);
+}
+
+#header h4 a:hover {
+    color: var(--orangeDark);
+    transition: var(--transition);
+}
+
+#header p {
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+#header .icons a {
+    background-color: var(--gray);
+    color: var(--white);
+    padding: 15px 22px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+#header .icons a:hover {
+    background-color: var(--orangeDark);
+    transition: var(--transition);
+}
+
+/***************
+Experience
+***************/
+#experience,
+#education {
+    padding: 80px 0 80px 50px;
+}
+
+#experience .row,
+#education .row {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#experience .row .col:first-child {
+    width: 80%;
+    text-align: left;
+}
+
+#experience .row .col:last-child,
+#education .row .col:last-child {
+    width: 20%;
+    text-align: right;
+}
+
+#experience .row .col:last-child p,
+#education .row .col:last-child p {
+    color: var(--orangeLight);
+}
+
+/***************
+Education
+***************/
+
+#education {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+
+
+
 
 
 
